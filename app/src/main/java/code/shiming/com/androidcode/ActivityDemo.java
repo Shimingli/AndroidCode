@@ -50,7 +50,8 @@ public class ActivityDemo extends Activity{
         if (mCloseOnTouchOutside && event.getAction() == MotionEvent.ACTION_DOWN
                 && isOutOfBounds(context, event) && peekDecorView() != null) {
             return true;
-        }                                                                                                              // 主要是对于处理边界外点击事件的判断：是否是DOWN事件，event的坐标是否在边界内等
+        }
+        // 主要是对于处理边界外点击事件的判断：是否是DOWN事件，event的坐标是否在边界内等
         return false;
     }
 
